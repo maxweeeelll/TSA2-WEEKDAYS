@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle-text {
+    text-align: center;
+    font-size: 24px;
+}
+
+.days {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; 
+}
+
+.day-button, .day-label {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transition: transform 0.5s ease, background-color 1s ease;
+}
+
+.hidden {
+    transform: translateY(-100%);
+}
+
+.box-side {
+    position: fixed;
+    right: calc(500px + 20px);
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+}
